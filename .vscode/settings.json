@@ -1,0 +1,8 @@
+{
+    "autoimport.absolute": true,
+    "auto-rename-tag.activationOnLanguage": [
+         "javascript":"javascriptreact
+        "*"
+    ]
+    
+}
