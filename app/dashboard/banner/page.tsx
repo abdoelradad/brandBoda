@@ -26,12 +26,13 @@ import {
   DropdownMenuSeparator,
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
-
+import { unstable_noStore as noStore } from "next/cache";
 import { MoreHorizontal, PlusCircle } from "lucide-react";
 import Image from "next/image";
 import Link from "next/link";
 
 async function getData() {
+  noStore();
   const data = await prisma.banner.findMany({
     orderBy: {
       createdAt: "desc",

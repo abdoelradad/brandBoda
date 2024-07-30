@@ -31,8 +31,9 @@ import {
 } from "@/components/ui/dropdown-menu";
 import prisma from "@/app/lib/db";
 import Image from "next/image";
-
+import { unstable_noStore as noStore } from "next/cache";
 async function getData() {
+  noStore();
   const data = await prisma.product.findMany({
     orderBy: {
       createdAt: "desc",
