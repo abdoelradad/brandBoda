@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { ReactNode } from 'react'
 import { DashboardNavigation }  from "../components/dashboard/DashboardNavigation";
 import {
   Sheet,
